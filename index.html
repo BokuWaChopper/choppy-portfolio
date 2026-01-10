@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choppy Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0d1117;
+            color: #c9d1d9;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background: #161b22;
+            padding: 20px 0;
+            border-bottom: 1px solid #30363d;
+        }
+        h1 {
+            color: #58a6ff;
+            font-size: 2.5rem;
+        }
+        .hero {
+            text-align: center;
+            padding: 60px 0;
+        }
+        .hero h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #58a6ff;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 40px 0;
+        }
+        .project {
+            background: #161b22;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #30363d;
+            transition: transform 0.3s ease;
+        }
+        .project:hover {
+            transform: translateY(-5px);
+            border-color: #58a6ff;
+        }
+        .project h3 {
+            color: #58a6ff;
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            border-top: 1px solid #30363d;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>BokuWaChopper</h1>
+            <p>Developer | Discord Bot Creator | Roblox Enthusiast</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="hero">
+                <h2>Welcome to my Portfolio</h2>
+                <p>Building innovative solutions with Python, JavaScript & Lua</p>
+            </section>
+
+            <section>
+                <h2 style="margin-top: 40px; margin-bottom: 20px; color: #58a6ff;">Featured Projects</h2>
+                <div class="projects">
+                    <div class="project">
+                        <h3>Valorant Bot</h3>
+                        <p>Discord bot for Valorant information and statistics</p>
+                    </div>
+                    <div class="project">
+                        <h3>Roblox Scripts</h3>
+                        <p>Advanced Lua scripts for Roblox game development</p>
+                    </div>
+                    <div class="project">
+                        <h3>Trading Bots</h3>
+                        <p>Automated trading solutions using Python & APIs</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 BokuWaChopper. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
