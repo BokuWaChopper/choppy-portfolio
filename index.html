@@ -1,193 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Choppy – Game Dev & Bots</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <canvas id="stars"></canvas>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choppy • Systems & Bots</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- CANVAS PENTRU STELE -->
+   <canvas id="stars"></canvas>
 
-  <!-- NAVBAR -->
-  <header class="top-nav">
-    <div class="logo">CHOPPY.DEV</div>
-    <nav>
-      <a href="#hero">Home</a>
-      <a href="#services">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+    <!-- NAVBAR -->
+    <header class="top-nav">
+      <div class="logo">CHOPPY.DEV</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-  <main class="layout">
-    <!-- HERO -->
-    <section class="hero-card" id="hero">
-      <div class="hero-avatar">
-        <img src="avatar.png" alt="avatar">
-      </div>
-      <div class="hero-text">
-        <p class="hero-subtitle">Game‑focused developer</p>
-        <h1 class="hero-title">Choppy</h1>
-        <div class="hero-tags">
-          <span>Gameplay</span>
-          <span>Bots</span>
-          <span>Systems</span>
-        </div>
-        <p class="hero-desc">
-          I build gameplay systems, backend tools, and automation for Roblox games
-          and Discord communities, using Lua, Python, C, and C++ to ship stable,
-          scalable features that actually survive real players.
-        </p>
-        <div class="hero-actions">
-          <a href="https://discord.gg/cPjzPqtQ4r" class="btn primary" target="_blank">
-            Join Discord
-          </a>
-          <a href="#projects" class="btn ghost">
-            View projects
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- WHAT I CAN BUILD -->
-    <section class="side-panel" id="services">
-      <h2 class="panel-title">What I can build</h2>
-      <div class="services-list">
-        <article class="service-item">
-          <h3>Game systems</h3>
-          <p>Inventory, economy, progression, combat, AI, quests, data saving.</p>
-        </article>
-        <article class="service-item">
-          <h3>Discord bots</h3>
-          <p>Moderation, game integration, economy, leveling, tools for staff.</p>
-        </article>
-        <article class="service-item">
-          <h3>Editing & scripting</h3>
-          <p>Custom game modes, maps, events, and content pipelines.</p>
-        </article>
-        <article class="service-item">
-          <h3>Video editing</h3>
-          <p>Trailers, gameplay showcases, promos, and social clips.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section class="projects-section" id="projects">
-      <div class="section-header">
-        <h2>Selected projects</h2>
-        <p>Recent work on Roblox games and Discord tooling.</p>
-      </div>
-
-      <div class="projects-grid">
-        <!-- Project 1 -->
-        <article class="project-card">
-          <div class="project-media">
-            <img src="project1.jpg" alt="Project 1">
+    <main class="layout">
+      <!-- HERO: POZA CENTERED CU TEXT SUB EA -->
+      <section class="hero-centered" id="about">
+        <div class="hero-content">
+          <!-- POZA CU GLOW -->
+          <div class="hero-avatar-glow">
+            <img src="avatar.png" alt="Choppy avatar" />
           </div>
-          <div class="project-body">
-            <h3>Project 1 – Shop & Stock System</h3>
-            <div class="project-tags">
-              <span>Lua</span>
-              <span>Python</span>
-              <span>C++</span>
-            </div>
-            <p>
-              Implemented a new shop and stock system wired into the gamepass
-              flow, with limited stock items, dynamic pricing, and safe server‑side
-              checks to prevent abuse.
-            </p>
-            <a href="https://youtu.be/01RwEGq5SaI" target="_blank" class="link-ghost">
-              Watch on YouTube →
-            </a>
-          </div>
-        </article>
 
-        <!-- Project 2 -->
-        <article class="project-card">
-          <div class="project-media">
-            <img src="project2.jpg" alt="Project 2">
-          </div>
-          <div class="project-body">
-            <h3>Project 2 – Economy Discord Bot</h3>
-            <div class="project-tags">
-              <span>Lua</span>
-              <span>Backend</span>
-              <span>Systems</span>
-            </div>
-            <p>
-              Built a Discord bot that connects directly to the game economy:
-              players can query item prices, compare options, and track changes
-              without opening the game.
-            </p>
-            <a href="https://youtu.be/S4KAYk-XZ7Y" target="_blank" class="link-ghost">
-              Watch on YouTube →
-            </a>
-          </div>
-        </article>
+          <!-- TEXT SUB POZA -->
+          <p class="hero-subtitle">Game & systems developer</p>
+          <h1 class="hero-title">Choppy</h1>
 
-        <!-- Project 3 -->
-        <article class="project-card">
-          <div class="project-media">
-            <img src="project3.jpg" alt="Project 3">
+          <div class="hero-tags">
+            <span>Roblox</span>
+            <span>Discord bots</span>
+            <span>Game systems</span>
+            <span>Automation</span>
           </div>
-          <div class="project-body">
-            <h3>Project 3 – Global Leaderboards</h3>
-            <div class="project-tags">
-              <span>Lua</span>
-              <span>Automation</span>
-              <span>Bots</span>
-            </div>
-            <p>
-              Created a global leaderboard system with podium display, money
-              economy integration, teleport UI, and fixed collision issues while
-              migrating from local to global tracking.
-            </p>
-            <a href="https://youtu.be/bFMG5zAQOeA" target="_blank" class="link-ghost">
-              Watch on YouTube →
-            </a>
-          </div>
-        </article>
-      </div>
-    </section>
 
-    <!-- CONTACT -->
-    <section class="contact-section" id="contact">
-      <div class="contact-card">
-        <div class="contact-left">
-          <h2>Contact & verification</h2>
-          <ul class="contact-list">
-            <li>
-              <span class="label">Discord</span>
-              <span class="value">tonytonychopper41</span>
-            </li>
-            <li>
-              <span class="label">Discord ID</span>
-              <span class="value">465418722463711232</span>
-            </li>
-            <li>
-              <span class="label">Roblox</span>
-              <span class="value">@BokuWaChopper41</span>
-            </li>
-          </ul>
-          <p class="verify-note">
-            Use the Discord ID to verify you're talking to the real account before sending any payment.
+          <p class="hero-desc">
+            I build gameplay systems, backend tools, and automation for Roblox games and
+            Discord communities, using Lua, Python, C, and C++ to ship stable, scalable features
+            that actually survive real players.
           </p>
+
+          <div class="hero-actions">
+            <a
+              href="https://discord.gg/cPjzPqtQ4r"
+              class="btn primary"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Join Discord
+            </a>
+            <a href="#projects" class="btn ghost">View work</a>
+          </div>
         </div>
-        <div class="contact-right">
-          <h3>Payment</h3>
-          <a href="https://paypal.me/teo411" target="_blank" class="btn primary wide">
-            PayPal
-          </a>
+      </section>
+
+      <!-- EXPERIENCE + SIDEBAR LAYOUT -->
+      <div class="content-grid">
+        <div class="main-content">
+          <!-- EXPERIENCE -->
+          <section class="experience-section" id="experience">
+            <h2 class="section-title">Experience</h2>
+
+            <article class="experience-item">
+              <div class="exp-header">
+                <h3 class="exp-role">Game Systems Developer</h3>
+                <span class="exp-duration">2 years Progress</span>
+              </div>
+              <p class="exp-date">Updated as of January 11, 2026</p>
+              <p class="exp-desc">
+                Specialized in inventory management, economy systems, progression mechanics, and AI
+                behavior. Led teams and documented processes for long-term scalability and
+                maintenance.
+              </p>
+            </article>
+
+            <article class="experience-item">
+              <div class="exp-header">
+                <h3 class="exp-role">Discord Bot Development</h3>
+                <span class="exp-duration">2+ years BACKEND</span>
+              </div>
+              <p class="exp-date">Updated as of January 11, 2026</p>
+              <p class="exp-desc">
+                Custom bot architecture, API integration, economy tracking, moderation systems, and
+                real-time game data synchronization. Deployed on reliable hosting with monitoring.
+              </p>
+            </article>
+
+            <article class="experience-item">
+              <div class="exp-header">
+                <h3 class="exp-role">Roblox Scripting & Design</h3>
+                <span class="exp-duration">2+ years DEVELOPMENT</span>
+              </div>
+              <p class="exp-date">Updated as of January 11, 2026</p>
+              <p class="exp-desc">
+                Lua scripting, game mechanics, UI implementation, server optimization, and critical
+                bug fixes in production games. Shipped features that handle thousands of concurrent
+                players.
+              </p>
+            </article>
+          </section>
+
+          <!-- PROJECTS GRID -->
+          <section class="projects-section" id="projects">
+            <h2 class="section-title">Past work</h2>
+
+            <div class="projects-grid-new">
+              <!-- Project 1 -->
+              <article class="project-card-new">
+                <div class="project-image">
+                  <img src="project1.jpg" alt="Shop stock system" />
+                </div>
+                <h3 class="project-title">Shop & stock system</h3>
+                <p class="project-description">
+                  Implemented a new shop and stock system wired into the gamepass flow, with limited
+                  stock items, dynamic pricing, and safe server-side checks to prevent abuse.
+                </p>
+                <a
+                  href="https://youtu.be/01RwEGq5SaI"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="project-link"
+                >
+                  Watch on YouTube →
+                </a>
+              </article>
+
+              <!-- Project 2 -->
+              <article class="project-card-new">
+                <div class="project-image">
+                  <img src="project2.jpg" alt="Economy Discord bot" />
+                </div>
+                <h3 class="project-title">Economy Discord bot</h3>
+                <p class="project-description">
+                  Built a Discord bot that connects directly to the game economy: players can query
+                  item prices, compare options, and track changes without opening the game.
+                </p>
+                <a
+                  href="https://youtu.be/S4KAYk-XZ7Y"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="project-link"
+                >
+                  Watch on YouTube →
+                </a>
+              </article>
+
+              <!-- Project 3 -->
+              <article class="project-card-new">
+                <div class="project-image">
+                  <img src="project3.jpg" alt="Global leaderboards" />
+                </div>
+                <h3 class="project-title">Global leaderboards</h3>
+                <p class="project-description">
+                  Created a global leaderboard system with podium display, economy integration,
+                  teleport UI, and fixed collision issues.
+                </p>
+                <a
+                  href="https://youtu.be/bFMG5zAQOeA"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="project-link"
+                >
+                  Watch on YouTube →
+                </a>
+              </article>
+            </div>
+          </section>
         </div>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar-panel">
+          <!-- LOCATION -->
+          <div class="sidebar-block">
+            <h3 class="sidebar-title">📍 Location</h3>
+            <p class="sidebar-content">Slatina, Olt, Romania</p>
+          </div>
+
+          <!-- PAYMENT METHODS -->
+          <div class="sidebar-block">
+            <h3 class="sidebar-title">💳 Payment Methods</h3>
+            <div class="payment-methods">
+              <a
+                href="https://paypal.me/teo411"
+                target="_blank"
+                rel="noreferrer"
+                class="payment-method-item"
+              >
+                <span class="method-icon">🅿️</span>
+                <span class="method-name">PayPal</span>
+              </a>
+              <div class="payment-method-item">
+                <span class="method-icon">🎮</span>
+                <span class="method-name">Robux</span>
+              </div>
+              <div class="payment-method-item">
+                <span class="method-icon">🏦</span>
+                <span class="method-name">Bank Transfer</span>
+              </div>
+              <div class="payment-method-item">
+                <span class="method-icon">💳</span>
+                <span class="method-name">Giftcards</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SOCIAL LINKS -->
+          <div class="sidebar-block">
+            <h3 class="sidebar-title">🔗 Social Links</h3>
+            <div class="social-links">
+              <a
+                href="https://discord.gg/cPjzPqtQ4r"
+                target="_blank"
+                rel="noreferrer"
+                class="social-link-item"
+              >
+                <span class="social-icon">💬</span>
+                <div class="social-link-text">
+                  <span class="social-platform">Discord</span>
+                  <span class="social-handle">tonytonychopper41</span>
+                </div>
+              </a>
+
+              <a
+                href="https://www.tiktok.com/@0...................8"
+                target="_blank"
+                rel="noreferrer"
+                class="social-link-item"
+              >
+                <span class="social-icon">🎵</span>
+                <div class="social-link-text">
+                  <span class="social-platform">TikTok</span>
+                  <span class="social-handle">@0...................8</span>
+                </div>
+              </a>
+
+              <a
+                href="https://www.youtube.com/@_bokuwachopper_"
+                target="_blank"
+                rel="noreferrer"
+                class="social-link-item"
+              >
+                <span class="social-icon">📺</span>
+                <div class="social-link-text">
+                  <span class="social-platform">YouTube</span>
+                  <span class="social-handle">@_bokuwachopper_</span>
+                </div>
+              </a>
+
+              <a
+                href="https://www.roblox.com/users/BokuWaChopper41/profile"
+                target="_blank"
+                rel="noreferrer"
+                class="social-link-item"
+              >
+                <span class="social-icon">🎮</span>
+                <div class="social-link-text">
+                  <span class="social-platform">Roblox</span>
+                  <span class="social-handle">BokuWaChopper41</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- VERIFICATION -->
+          <div class="sidebar-block sidebar-warning">
+            <p class="warning-text">
+              🔐 Use Discord ID <strong>465418722463711232</strong> to verify you're talking to the
+              real account before payment.
+            </p>
+          </div>
+        </aside>
       </div>
-    </section>
-  </main>
 
-  <footer class="site-footer">
-    © 2026 Choppy • Game systems, bots & scripting
-  </footer>
+      <!-- CONTACT -->
+      <section class="contact-section" id="contact">
+        <div class="contact-card">
+          <div class="contact-left">
+            <h2>Ready to work together?</h2>
+            <p>
+              Hit me up on Discord or any of the platforms above. I'm open to custom development,
+              scripting gigs, and long-term partnerships for Roblox games and Discord tools.
+            </p>
+          </div>
 
-  <script src="stars.js"></script>
-</body>
+          <div class="contact-right">
+            <a
+              href="https://discord.gg/cPjzPqtQ4r"
+              class="btn primary wide"
+              target="_blank"
+              rel="noreferrer"
+            >
+              DM on Discord
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      © 2026 Choppy — Game systems, bots & scripting
+    </footer>
+
+    <!-- stele + petale pe fundal -->
+    <script src="stars.js"></script>
+    <script src="petale.js"></script>
+  </body>
 </html>
